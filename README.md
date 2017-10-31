@@ -39,3 +39,30 @@ You can set the height and width of the generated qrcode:
 under <a href='https://github.com/jeromeetienne/jquery-qrcode/blob/master/MIT-LICENSE.txt'>MIT license</a>.
 If you hit bugs, fill issues on github.
 Feel free to fork, modify and have fun with it :)
+
+ 动态生成二维码插件 jquery.qrcode.js
+
+前段时间做项目，需要动态生成一个二维码，于是就在网上找了一下发现一个jquery插件jquery.qrcode.js，所以今天就简单说一下这个插件的使用：
+
+ 
+
+jquery.qrcode.js是依赖jquery的,所以要先引入jquery再引入jquery.qrcode.js
+
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+
+ 
+
+在页面上添加一个div标签，用于创建渲染区域
+
+<div id="qrcode"></div>
+
+ 
+
+通过下面代码就可以生成一个默认256×256大小的二维码
+
+<script type="text/javascript">
+    jQuery('#qrcode').qrcode("http://www.cnblogs.com/HtmlCss3/");
+</script>
+
+
